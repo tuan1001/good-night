@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  /* Tím than -> xanh đêm -> hồng nhẹ */
+  background: linear-gradient(160deg, #0b0723 0%, #1a1142 45%, #3a1d5e 75%, #5b2a6b 100%);
+  background-attachment: fixed;
+  color: #f5f0ff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hiệu ứng pháo trái tim bung ra khi bấm nút */
+@keyframes heartBurst {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0) scale(0.3) rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(var(--tx), var(--ty))
+      scale(1.2) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+
+.heart-particle {
+  animation: heartBurst 1s ease-out forwards;
+}
+
+/* Tôn trọng người dùng tắt animation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
