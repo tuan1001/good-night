@@ -15,14 +15,10 @@ const dancing = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Chúc bé ngủ ngon 🌙",
-  description:
-    "Một lời chúc ngủ ngon dành riêng cho Bùi Mai Phương ",
-  openGraph: {
-    title: "Chúc bé ngủ ngon 🌙 ",
-    description: "Một lời chúc ngủ ngon dành riêng cho Bùi Mai Phương ",
-    type: "website",
-  },
+  // Để trung tính, không lộ thông tin khi gửi link ra ngoài.
+  // Tên người nhận chỉ hiện BÊN TRONG web (chữ ký), không nằm ở đây.
+  title: "🌙",
+  description: " ",
 };
 
 export const viewport: Viewport = {
