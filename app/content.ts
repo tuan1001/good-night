@@ -8,7 +8,7 @@ export const content = {
     "Chúc bé yêu một đêm thật ngon, mai thức dậy lại xinh như hôm nay. 🌸",
   buttonLabel: "Nhấn để nhận lời chúc",
   secretMessage:
-    "Goodnight bé cưng. Cấm mơ thấy ai ngoài anh nha! 😤❤️",
+    "Goodnight bé. Cấm mơ thấy ai ngoài anh nha! 😤❤️",
   // ✍️ Chữ ký — đánh dấu web chỉ dành riêng cho một người
   signatureName: "Bùi Mai Phương",
 };
